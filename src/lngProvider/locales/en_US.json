@@ -4,9 +4,12 @@
   "sidebar.newProject": "New Project",
 
   "pages.dashboard": "Overview",
+  "pages.dashboard.SEO.title": "Your overview - Feathr",
   "pages.ideas": "Ideas",
   "pages.market": "Marketplace",
+  "pages.market.SEO.title": "Get the best tools - Feathr",
   "pages.professionals": "Professionals",
+  "pages.professionals.SEO.title": "Find professionals - Feathr",
 
   "popup.profile": "My profile",
   "popup.setting": "Settings",
@@ -16,6 +19,7 @@
   "search.placeholder": "Search for people, tools or projects",
 
   "error.404": "404: Page not found.",
+  "error.404.SEO.title": "Oops! Page not found - Feathr",
   "error.404Msg": "Check the web address and try again",
   "error.goHome": "Back to dashboard",
 

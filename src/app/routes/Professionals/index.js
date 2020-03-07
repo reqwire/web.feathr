@@ -1,17 +1,20 @@
 import React from 'react';
-import IntlMessages from 'util/IntlMessages';
 import { Helmet } from 'react-helmet'
+import {injectIntl} from 'react-intl';
 
 class Professionals extends React.Component {
 
   render() {
-    document.title = "This is demo Component";
+    const intl = this.props.intl; 
+    const pageTitle = intl.formatMessage({ id: 'pages.professionals.SEO.title' });
+   
     return (
       <div className="app-wrapper">
+        <Helmet title={pageTitle} />
 
       </div>
     );
   }
 }
 
-export default Professionals;
+export default injectIntl(Professionals);
