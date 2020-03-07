@@ -31,10 +31,6 @@ const
             <span>Location Finder App</span>
           </li>
         </ul>
-
-        <div className="package-footer">
-          <span className={`jr-link ${footerStyle}`}>buy now</span>
-        </div>
       </div>
     )
   };

@@ -25,24 +25,10 @@
 }
 
 .error-code {
-  color: $gray-900;
-  font-size: 160px;
+  color: $secondary;
   text-align: center;
   line-height: 1;
   font-weight: 600;
-  text-shadow: 10px 6px 8px rgba(117, 117, 117, 0.8);
-
-  @media screen and (max-width: 991px) {
-    font-size: 130px;
-  }
-
-  @media screen and (max-width: 767px) {
-    font-size: 100px;
-  }
-
-  @media screen and (max-width: 575px) {
-    font-size: 80px;
-  }
 }
 
 .page-error-content h2 {

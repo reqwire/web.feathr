@@ -110,11 +110,49 @@ class SidenavContent extends Component {
             <IntlMessages id="sidebar.main"/>
           </li>
           <li className="menu no-arrow">
-            <NavLink to="/app/sample-page">
+            <NavLink to="/dashboard">
               <i className="zmdi zmdi-view-dashboard zmdi-hc-fw"/>
-              <span className="nav-text"><IntlMessages id="pages.samplePage"/> </span>
+              <span className="nav-text"><IntlMessages id="pages.dashboard"/> </span>
             </NavLink>
           </li>
+          <li className="menu no-arrow">
+            <NavLink to="/market">
+              <i className="zmdi zmdi-store zmdi-hc-fw"/>
+              <span className="nav-text"><IntlMessages id="pages.market"/> </span>
+            </NavLink>
+          </li>
+          <li className="menu no-arrow">
+            <NavLink to="/professionals">
+              <i className="zmdi zmdi-accounts zmdi-hc-fw"/>
+              <span className="nav-text"><IntlMessages id="pages.professionals"/> </span>
+            </NavLink>
+          </li>
+        </ul>
+
+        <ul className="nav-menu">
+
+          <li className="nav-header">
+            <IntlMessages id="sidebar.projects"/>
+          </li>
+
+          <li className="menu no-arrow">
+            <NavLink to="/project/x8VzMl9r">
+              <i className="zmdi zmdi-puzzle-piece zmdi-hc-fw"/>
+              <span className="nav-text">
+                Feathr.io
+                <br/>
+                <small className="nav-subtext text-teal">Startup</small>
+              </span>
+            </NavLink>
+          </li>
+
+          <li className="menu no-arrow">
+            <NavLink to="/project">
+              <i className="zmdi zmdi-plus zmdi-hc-fw"/>
+              <span className="nav-text"><IntlMessages id="sidebar.newProject"/> </span>
+            </NavLink>
+          </li>
+
         </ul>
       </CustomScrollbars>
     );

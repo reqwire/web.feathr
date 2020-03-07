@@ -89,7 +89,7 @@
   max-height: $app-bar-height;
 
   & .search-bar {
-    margin-left: 50px;
+    margin-left: 1em;
     margin-right: auto;
     max-width: 300px;
     width: 280px;
@@ -317,6 +317,16 @@
   }
 }
 
+header .messages-list.scrollbar {
+  height: auto !important;
+  max-height: 280px;
+
+  >div {
+    position:relative !important;
+  }
+}
+
+
 .messages-list.language-list ul li {
   padding: 7px 6px 6px;
 }
@@ -331,7 +341,7 @@
   }
 
   & .sub-heading {
-    font-size: 11px;
+    font-size: 1em;
     margin-bottom: 6px !important;
 
     &.mb-0 {

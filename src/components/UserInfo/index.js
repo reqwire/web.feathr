@@ -28,9 +28,9 @@ class UserInfo extends React.Component {
           className="user-avatar "
         />
         <div className="user-detail">
-          <h4 className="user-name" onClick={this.handleClick}>Robert Johnson <i
-            className="zmdi zmdi-caret-down zmdi-hc-fw align-middle"/>
+          <h4 className="user-name" onClick={this.handleClick}>John Smith &nbsp;<i className="zmdi zmdi-caret-down zmdi-hc-fw align-middle"/>
           </h4>
+          Plan: Free
         </div>
         <Menu className="user-info"
               id="simple-menu"

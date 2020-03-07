@@ -16,5 +16,5 @@ export default SearchBox;
 
 SearchBox.defaultProps = {
   styleName: "",
-  value: "",
+  value: ""
 };

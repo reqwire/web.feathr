@@ -8,9 +8,6 @@ class CardMenu extends React.Component {
   render() {
 
     const options = [
-      <IntlMessages id="popup.updateData"/>,
-      <IntlMessages id="popup.detailedLog"/>,
-      <IntlMessages id="popup.statistics"/>,
       <IntlMessages id="popup.clearData"/>
     ];
     const {menuState, anchorEl, handleRequestClose} = this.props;

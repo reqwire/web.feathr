@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     const {match, location, locale, isDirectionRTL} = this.props;
     if (location.pathname === '/') {
-      return ( <Redirect to={'/app/sample-page'}/> );
+      return ( <Redirect to={'/dashboard'}/> );
     }
     const applyTheme = createMuiTheme(defaultTheme);
 
@@ -44,7 +44,7 @@ class App extends Component {
             <RTL>
               <div className="app-main">
                 <Switch>
-                  <Route path={`${match.url}app`} component={MainApp}/>
+                  <Route path={`${match.url}`} component={MainApp}/>
                   <Route
                     component={asyncComponent(() => import('components/Error404'))}/>
                 </Switch>

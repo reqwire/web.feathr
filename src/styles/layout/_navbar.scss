@@ -220,8 +220,12 @@
   position: static !important;
 }
 
+.header-notifications i {
+  font-size: 1.15em;
+}
+
 .app-top-nav {
-  background-color: #252525 !important;
+  background-color: #151c22 !important;
 
   & .navbar-nav {
     & li.nav-item {

@@ -10,9 +10,7 @@ button {
   min-height: 10px !important;
   font-size: $btn-font-size !important;
   font-weight: $btn-font-weight !important;
-  text-transform: capitalize !important;
   line-height: $btn-line-height !important;
-  @include border-radius($border-radius-sm !important);
   cursor: pointer;
 }
 

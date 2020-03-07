@@ -19,7 +19,7 @@ import AppNotification from '../AppNotification/index';
 import CardHeader from 'components/dashboard/Common/CardHeader/index';
 import {switchLanguage, toggleCollapsedNav} from 'actions/Setting';
 import IntlMessages from 'util/IntlMessages';
-import LanguageSwitcher from 'components/LanguageSwitcher/index';
+//import LanguageSwitcher from 'components/LanguageSwitcher/index';
 import Menu from 'components/TopNav/Menu';
 import UserInfoPopup from 'components/UserInfo/UserInfoPopup';
 
@@ -137,7 +137,7 @@ class Header extends React.Component {
   };
 
   render() {
-    const {drawerType, locale, navigationStyle, horizontalNavPosition} = this.props;
+    const {drawerType, navigationStyle, horizontalNavPosition} = this.props;
     const drawerStyle = drawerType.includes(FIXED_DRAWER) ? 'd-block d-xl-none' : drawerType.includes(COLLAPSED_DRAWER) ? 'd-block' : 'd-none';
 
     return (
@@ -157,8 +157,8 @@ class Header extends React.Component {
             </IconButton>
           }
 
-          <Link className="app-logo mr-2 d-none d-sm-block" to="/">
-            <img src={require("assets/images/logo.png")} alt="Jambo" title="Jambo"/>
+          <Link className="app-logo mr-2 d-block" to="/">
+            <img src={require("assets/images/logo.png")} alt="Feathr" title="Feathr"/>
           </Link>
 
 
@@ -169,27 +169,6 @@ class Header extends React.Component {
           <Menu/>}
 
           <ul className="header-notifications list-inline ml-auto">
-            <li className="list-inline-item">
-              <Dropdown
-                className="quick-menu app-notification"
-                isOpen={this.state.apps}
-                toggle={this.onAppsSelect.bind(this)}>
-
-                <DropdownToggle
-                  className="d-inline-block"
-                  tag="span"
-                  data-toggle="dropdown">
-                  <span className="app-notification-menu">
-                    <i className="zmdi zmdi-apps zmdi-hc-fw zmdi-hc-lg"/>
-                    <span>Apps</span>
-                  </span>
-                </DropdownToggle>
-
-                <DropdownMenu>
-                  {this.Apps()}
-                </DropdownMenu>
-              </Dropdown>
-            </li>
             <li className="d-inline-block d-lg-none list-inline-item">
               <Dropdown
                 className="quick-menu nav-searchbox"
@@ -212,7 +191,8 @@ class Header extends React.Component {
                 </DropdownMenu>
               </Dropdown>
             </li>
-            <li className="list-inline-item">
+
+            {/*<li className="list-inline-item">
               <Dropdown
                 className="quick-menu"
                 isOpen={this.state.langSwitcher}
@@ -231,10 +211,9 @@ class Header extends React.Component {
                   <LanguageSwitcher switchLanguage={this.props.switchLanguage}
                                     handleRequestClose={this.handleRequestClose}/>
                 </DropdownMenu>
-              </Dropdown>
+          </Dropdown>
+            </li>*/}
 
-
-            </li>
             <li className="list-inline-item app-tour">
               <Dropdown
                 className="quick-menu"
@@ -257,12 +236,12 @@ class Header extends React.Component {
                 </DropdownMenu>
               </Dropdown>
             </li>
-            <li className="list-inline-item mail-tour">
+
+            {/*<li className="list-inline-item mail-tour">
               <Dropdown
                 className="quick-menu"
                 isOpen={this.state.mailNotification}
-                toggle={this.onMailNotificationSelect.bind(this)}
-              >
+                toggle={this.onMailNotificationSelect.bind(this)}>
                 <DropdownToggle
                   className="d-inline-block"
                   tag="span"
@@ -280,7 +259,7 @@ class Header extends React.Component {
                   <MailNotification/>
                 </DropdownMenu>
               </Dropdown>
-            </li>
+            </li>*/}
 
             {navigationStyle === HORIZONTAL_NAVIGATION &&
             <li className="list-inline-item user-nav">

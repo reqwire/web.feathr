@@ -10,8 +10,8 @@ const ProfileCard = () => {
         </div>
       </div>
       <div className="pi-content">
-        <h4>Robert Johnson</h4>
-        <p>Designer</p>
+        <h4>Billie Bell</h4>
+        <p></p>
         <p className="card-text">Hello everyone, I am Maryam. My designs are used in several big companies in United
           State and other
           countries.</p>

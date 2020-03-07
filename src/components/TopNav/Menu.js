@@ -87,8 +87,8 @@ class Menu extends Component {
         <ul className="navbar-nav navbar-nav-mega">
 
           <li className="nav-item">
-            <NavLink to="/app/sample-page">
-              <span className="nav-text"><IntlMessages id="pages.samplePage"/> </span>
+            <NavLink to="/dashboard">
+              <span className="nav-text"><IntlMessages id="pages.dashboard"/> </span>
             </NavLink>
           </li>
 
